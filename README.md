@@ -41,10 +41,13 @@ This project is a Spring Boot-based REST API for managing todos. It provides sec
 
 ### Todo Management (Requires Authentication)
 
-- `GET /api/todos` - Get all todos
+- `GET /api/todos` - Get all todos(Admin/User access)
+- `GET /api/todos/{id}` - Get todo by Id(Admin/User access)
 - `POST /api/todos` - Create a new todo (Admin/User access)
-- `PUT /api/todos/{id}` - Update a todo (Admin/User access)
+- `PUT /api/todos/{id}` - Update a todo (Admin only)
 - `DELETE /api/todos/{id}` - Delete a todo (Admin only)
+- `PATCH /api/todos/{id}` - Complete a todo (Admin/User access)
+- `PATCH /api/todos/{id}` - Incomplete a todo (Admin/User access)
 
 ## Security
 
