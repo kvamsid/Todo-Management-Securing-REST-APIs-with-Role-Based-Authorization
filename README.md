@@ -1,4 +1,4 @@
-# Todo Management REST API
+# Todo Management – Securing REST APIs with Role-Based Authorization
 
 This project is a Spring Boot-based REST API for managing todos. It provides secure CRUD operations with role-based access control and JWT authentication.
 
