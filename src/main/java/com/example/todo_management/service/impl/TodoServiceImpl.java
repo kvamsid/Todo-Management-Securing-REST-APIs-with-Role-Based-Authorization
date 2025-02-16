@@ -1,20 +1,20 @@
-package com.example.todo_management.service;
+package com.example.todo_management.service.impl;
 
 import com.example.todo_management.dto.TodoDto;
 import com.example.todo_management.entity.Todo;
 import com.example.todo_management.exception.ResourceNotFoundException;
 import com.example.todo_management.repository.TodoRepository;
+import com.example.todo_management.service.TodoService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Service
-public class TodoServiceImpl implements TodoService{
+public class TodoServiceImpl implements TodoService {
 
     private TodoRepository todoRepository;
     private ModelMapper modelMapper;
